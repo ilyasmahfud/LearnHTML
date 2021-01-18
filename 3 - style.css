@@ -1,0 +1,72 @@
+/* 
+ada 3 cara penulisan dalam CSS,
+- inline --> dengan menggunakan atribut style didalam elemen HTML
+- internal --> dengan menggunakan elemen <style> dfibagian head HTML
+- eksternal --> dengan menggunakan elemen <link> untuk menambah file eksternal CSS
+
+Dana saya lebih prefer menggunakan eksternal file. sooo, here we go..
+buat link di file HTML dibagian head HTML dengan command : 
+    <link rel="stylesheet" href="3 - style.css">
+    - href = "nama file atau link"
+*/
+
+body {
+    background-color: lightcyan;
+}
+h3 {
+    color: blue;
+}
+p {
+    border: 2px solid red;
+    padding: 20px;
+    margin: 10px;
+    color:green;
+}
+
+/* 
+- color = memberi warna pada teks
+- border = memberi garis batas konten
+- padding = jarak konten ke border
+- margin = jarak margin ke batas web
+*/
+
+a:link{
+    color: white;
+    background-color: palevioletred;
+    padding: 5px 5px; 
+    /* 
+    padding : apx bpx;
+    - a adalah lebar tombol bagian atas dan bawah konten
+    - b adalah lebar tombol bagian kanan dan kiri konten
+    */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+/* a:link = warna utama pada tombol */
+
+a:hover{
+    color: black;
+    background-color: red;
+    padding: 5px 5px; 
+    text-align: center;
+    text-decoration: none;
+    display: inline-flexbox;   
+}
+/* a:hover = membuat link berubah warna ketika mouse berada diatas tombol */
+
+ a:visited{
+    color: black;
+    background-color: yellow;
+    padding: 5px 5px; 
+    text-align: center;
+    text-decoration: none;
+    display: inline-flexbox;    
+ }
+/* sama seperti s:link, namun ini untuk tombol bookmark */
+
+a:active{
+    color: red;
+    background-color: purple;
+}
+/* tombol akan berubah warna ketika diklik */
